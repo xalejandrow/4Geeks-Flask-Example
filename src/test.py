@@ -30,3 +30,7 @@ loaded_model = pickle.load(open('../models/coffee_model.pkl','rb'))
 result = loaded_model.predict(posted)
 test_result = result.tolist()[0]
 print(test_result)
+
+
+# Se puede utilizar la librería: pytest 
+# para testear el modelo (no se da en el curso)
