@@ -13,7 +13,7 @@ def hello_flask():
 def show_home():
     return render_template('index.html')
 
-@app.route('/<string: country>/<string: variety>/<float: aroma>/<float: aftertaste>/<float: acidity>/<float: body>/<float: balance>/<float: moisture>')
+@app.route('/<string:country>/<string:variety>/<float:aroma>/<float:aftertaste>/<float:acidity>/<float:body>/<float:balance>/<float:moisture>')
 def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture):
     cols = ['country_of_origin', 'variety', 'aroma','aftertaste','acidity','body','balance','moisture']
     data = [country, variety, aroma,aftertaste,acidity,body,balance,moisture]
@@ -37,3 +37,8 @@ def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)
+
+
+#probar
+# No Other/Other/7.42/7.33/7.42/7.25/7.33/0.0
+# Yes Guatemala/Bourbon/7.83/7.67/7.33/7.67/7.67/0.11
