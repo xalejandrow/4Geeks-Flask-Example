@@ -12,7 +12,7 @@ import numpy as np
 #balance = 7.33
 #moisture = 0.0
 
-#Si
+#Yes
 country = 'Colombia'
 variety = 'Caturra'
 aroma = 7.83
